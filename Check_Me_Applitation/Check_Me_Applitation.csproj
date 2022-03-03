@@ -55,6 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\DesktopViewModel.cs" />
+    <Compile Include="ViewModel\DocumentViewModel.cs" />
+    <Compile Include="ViewModel\DownloadViewModel.cs" />
+    <Compile Include="ViewModel\HomeViewModel.cs" />
+    <Compile Include="ViewModel\MovieViewModel.cs" />
+    <Compile Include="ViewModel\MusicViewModel.cs" />
+    <Compile Include="ViewModel\NavigationViewModel.cs" />
+    <Compile Include="ViewModel\PCViewModel.cs" />
+    <Compile Include="ViewModel\PictureViewModel.cs" />
+    <Compile Include="ViewModel\StartupViewModel.cs" />
+    <Compile Include="ViewModel\TrashViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,12 +74,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="RelayCommmand.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\MainModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -86,6 +103,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Fonts\Cairo-SemiBold.ttf" />
+    <Resource Include="Fonts\OpenSans-Regular.ttf" />
+    <Resource Include="Fonts\Roboto-Regular.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +113,65 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\alarm_icon.png" />
+    <Resource Include="Assets\analytics_icon.png" />
+    <Resource Include="Assets\android_icon.png" />
+    <Resource Include="Assets\angular_icon.png" />
+    <Resource Include="Assets\audio_icon.png" />
+    <Resource Include="Assets\back_icon.png" />
+    <Resource Include="Assets\book_icon.png" />
+    <Resource Include="Assets\calendar_icon.png" />
+    <Resource Include="Assets\channelIcon.png" />
+    <Resource Include="Assets\channel_icon.png" />
+    <Resource Include="Assets\chart_icon.png" />
+    <Resource Include="Assets\clap_icon.png" />
+    <Resource Include="Assets\close_icon.png" />
+    <Resource Include="Assets\close_mo_icon.png" />
+    <Resource Include="Assets\Desktop_Icon.png" />
+    <Resource Include="Assets\Document_Icon.png" />
+    <Resource Include="Assets\Download_Icon.png" />
+    <Resource Include="Assets\drive_icon.png" />
+    <Resource Include="Assets\export_icon.png" />
+    <Resource Include="Assets\file_icon.png" />
+    <Resource Include="Assets\film_icon.png" />
+    <Resource Include="Assets\flutter_icon.png" />
+    <Resource Include="Assets\folder_icon.png" />
+    <Resource Include="Assets\headphone_icon.png" />
+    <Resource Include="Assets\Home_Icon.png" />
+    <Resource Include="Assets\html_icon.png" />
+    <Resource Include="Assets\Images_Icon.png" />
+    <Resource Include="Assets\invoice_icon.png" />
+    <Resource Include="Assets\javascript_icon.png" />
+    <Resource Include="Assets\Movies_Icon.png" />
+    <Resource Include="Assets\movie_icon.png" />
+    <Resource Include="Assets\musical_icon.png" />
+    <Resource Include="Assets\Music_Icon.png" />
+    <Resource Include="Assets\network_icon.png" />
+    <Resource Include="Assets\notepad_icon.png" />
+    <Resource Include="Assets\note_icon.png" />
+    <Resource Include="Assets\order_icon.png" />
+    <Resource Include="Assets\password_icon.png" />
+    <Resource Include="Assets\pctrash_icon.png" />
+    <Resource Include="Assets\pc_icon.png" />
+    <Resource Include="Assets\picture_icon.png" />
+    <Resource Include="Assets\printer_icon.png" />
+    <Resource Include="Assets\print_icon.png" />
+    <Resource Include="Assets\python_icon.png" />
+    <Resource Include="Assets\services_icon.png" />
+    <Resource Include="Assets\stock_icon.png" />
+    <Resource Include="Assets\studio_icon.png" />
+    <Resource Include="Assets\swift_icon.png" />
+    <Resource Include="Assets\Trash_Icon.png" />
+    <Resource Include="Assets\usb_icon.png" />
+    <Resource Include="Assets\vsc_icon.png" />
+    <Resource Include="Assets\vs_icon.png" />
+    <Resource Include="Assets\webcam_icon.png" />
+    <Resource Include="Assets\wifi_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
